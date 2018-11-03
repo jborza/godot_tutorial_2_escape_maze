@@ -124,4 +124,32 @@ anims/right = SubResource( 4 )
 anims/up = SubResource( 5 )
 blend_times = [  ]
 
+[node name="RayCastRight" type="RayCast2D" parent="." index="4"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 64, 0 )
+collision_mask = 1
+
+[node name="RayCastLeft" type="RayCast2D" parent="." index="5"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( -64, 0 )
+collision_mask = 1
+
+[node name="RayCastDown" type="RayCast2D" parent="." index="6"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, 64 )
+collision_mask = 1
+
+[node name="RayCastUp" type="RayCast2D" parent="." index="7"]
+
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 0, -64 )
+collision_mask = 1
+
 

@@ -93,7 +93,7 @@ angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
-speed = null
+speed = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 

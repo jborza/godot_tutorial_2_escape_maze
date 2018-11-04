@@ -6,7 +6,7 @@ signal grabbed_key
 signal win
 
 func _ready():
-	pass
+	$Sprite.scale = Vector2(1, 1)
 
 func _process(delta):
 	if can_move:
@@ -18,6 +18,13 @@ func _process(delta):
 
 func _on_Player_area_entered(area):
 	if area.is_in_group('enemies'):
+		area.hide()
+		set_process(false)
+		$CollisionShape2D.disabled = true
+		$AnimationPlayer.play("die")
+		$DiePlayer.play()
+		yield($AnimationPlayer, "animation_finished")
+		yield($DiePlayer, "finished")
 		emit_signal('dead')
 	if area.has_method('pickup'):
 		area.pickup()

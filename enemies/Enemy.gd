@@ -1,4 +1,4 @@
-extends "res://Character.gd"
+extends "res://character/Character.gd"
 
 func _ready():
     can_move = false

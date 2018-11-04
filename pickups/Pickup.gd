@@ -9,12 +9,12 @@ var type
 func _ready():
 	$Tween.interpolate_property($Sprite, 'scale', 
 		Vector2(1,1), Vector2(3,3), 0.5, Tween.TRANS_QUAD, Tween.EASE_IN_OUT)
-	$Tween.targeting_property($Sprite, 'modulate',
+	$Tween.interpolate_property($Sprite, 'modulate',
 		Color(1,1,1,1), Color(1,1,1,0), 0.5, Tween.TRANS_QUAD, Tween.EASE_IN_OUT)
 
 func init(_type, pos):
 	type = _type
-	$Sprite.texture = textures[type]
+	$Sprite.texture = load(textures[type])
 	position = pos
 	
 func pickup():

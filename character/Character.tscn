@@ -2,7 +2,6 @@
 
 [ext_resource path="res://character/Character.gd" type="Script" id=1]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
@@ -84,7 +83,7 @@ tracks/0/keys = {
 "values": [ 15, 16, 17, 18, 19 ]
 }
 
-[node name="Character" type="Area2D"]
+[node name="Character" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )

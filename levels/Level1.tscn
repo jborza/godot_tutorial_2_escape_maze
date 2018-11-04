@@ -83,4 +83,6 @@ __meta__ = {
 
 [node name="Player" parent="." index="3" instance=ExtResource( 5 )]
 
+position = Vector2( 95.7635, -94.5358 )
+
 

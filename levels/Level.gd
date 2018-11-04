@@ -52,7 +52,7 @@ func game_over():
 	pass
  
 func _on_Player_win():
-	pass		
+	Global.next_level()
 	
 func _on_Player_grabbed_key():
 	for cell in doors:

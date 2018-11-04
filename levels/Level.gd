@@ -49,7 +49,7 @@ func spawn_items():
 				add_child(p)	
 			
 func game_over():
-	pass
+	Global.game_over()
  
 func _on_Player_win():
 	Global.next_level()
